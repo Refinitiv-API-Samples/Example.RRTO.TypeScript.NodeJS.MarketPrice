@@ -6,7 +6,7 @@
 * [TypeScript Overview](#typescript)
 * [Prerequisites](#prerequisites)
 * [How to run the application](#run_application)
-* [Connecting to the API from Amazon AWS](#support)
+* [How to run the application in Docker](#run_app_docker)
 * [References](#references)
 
 ## <a id="overview"></a>Overview
@@ -259,7 +259,7 @@ All Command-line Option Descriptions:
 * ```--app_id```          ```<OPTIONAL>``` Application ID to use when logging in. If not specified, "256" is used.
 * ```--position```        ```<OPTIONAL>``` Position to use when logging in. If not specified, the current host is used.
 
-## <a id="run_app_docker_"></a>How to run the application in Docker
+## <a id="run_app_docker"></a>How to run the application in Docker
 
 The Docker Desktop/Engine application should be installed and run properly on your machine. For Windows 10, please refer to this [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/) page.
 

@@ -25,7 +25,6 @@
     "@types/ws": "^7.4.0",
     "ip": "^1.1.5",
     "minimist": "^1.2.3",
-    "optimist": "^0.6.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "ws": "^7.4.4"

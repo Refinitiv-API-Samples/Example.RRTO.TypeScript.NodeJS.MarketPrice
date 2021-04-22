@@ -12,8 +12,8 @@
 // Refinitiv Real-Time - Optimized (Refinitiv Data Platform) to request and retrieve realtime market data.
 //
 // Author: Wasin Waeosri
-// Version: 1.5
-// Date:    March 2021
+// Version: 1.6
+// Date:    April 2021
 //*********************************************************************************************************************
 
 import * as EventEmitter from "events";
@@ -59,7 +59,8 @@ let itemname: string = '/EUR=';
 //let itemnames: string[] = ['EUR=','JPY='];
 let REST_url: string = '';
 let WS_URL: string = '';
-const argv = require("optimist").argv; // For getting command line arguments 
+//const argv = require("optimist").argv; // For getting command line arguments 
+const argv = require("minimist")(process.argv.slice(2)); // For getting command line arguments 
 let hostList: string[] = [];
 let portList: string[] = [];
 let hotstandby: boolean = false;
