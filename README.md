@@ -11,7 +11,7 @@
 
 ## <a id="overview"></a>Overview
 
-**Update**: March 2021
+**Update**: April 2021
 
 [Refinitiv Data Platform (RDP)](https://developers.refinitiv.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-platform-apis) gives you seamless and holistic access to all of the Refinitiv content (whether real-time or non-real-time, analytics or alternative datasets), commingled with your content, enriching, integrating, and distributing the data through a single interface, delivered wherever you need it.
 
@@ -34,6 +34,7 @@ This example requires the following dependencies software.
 4. [Express.js](https://expressjs.com/) web framework (will be installed via ```npm install``` command)
 5. [Webpack](https://webpack.js.org/) JavaScript module bundler (will be installed via ```npm install``` command)
 6. Access to the Refinitiv Refinitiv Data Platform and Refinitiv Real-Time - Optimized. 
+7. [Docker Desktop/Engine](https://docs.docker.com/get-docker/) version 20.10.x and [Docker-Compose](https://docs.docker.com/compose/install/) version 1.29.x
 
 Please contact your Refinitiv's representative to help you to access the RDP account and services. 
 
@@ -257,6 +258,21 @@ All Command-line Option Descriptions:
 * ```--ric```             ```<OPTIONAL>``` Name of the item to request from the Refinitiv Real-Time Service. If not specified, /EUR= is requested.
 * ```--app_id```          ```<OPTIONAL>``` Application ID to use when logging in. If not specified, "256" is used.
 * ```--position```        ```<OPTIONAL>``` Position to use when logging in. If not specified, the current host is used.
+
+## <a id="run_app_docker_"></a>How to run the application in Docker
+
+The Docker Desktop/Engine application should be installed and run properly on your machine. For Windows 10, please refer to this [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/) page.
+
+1. Unzip or download the example project folder into a directory of your choice 
+2. Run the [Docker build](https://docs.docker.com/engine/reference/commandline/build/) command to build the Docker image named *developers/node_streamingjs*.
+    ```
+    $> docker build . -t developers/node_streamingjs
+    ```
+3. Once Docker build success, use the [Docker run](https://docs.docker.com/engine/reference/run/) command to start the Docker container to run application.
+    ```
+    $> docker run developers/node_streamingjs --user <Machine-ID> --password <Password> --clientid <App key> --ric <Interested RIC code (optional)>
+    ```
+4. The result will be the same as the above section.
 
 ## <a id="references"></a>References
 For further details, please check out the following resources:

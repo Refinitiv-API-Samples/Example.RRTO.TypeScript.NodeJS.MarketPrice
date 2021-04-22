@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+dist
+.git
+.gitignore
+LICENSE.md 
+README.md 
+diagram.pptx
+assetinfo.json
+images
+internal_dev

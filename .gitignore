@@ -1,13 +1,4 @@
-market_price_edpgw_service_discovery.py
-market_price.js
-web_app.ts
 node_modules/
-
-note.txt
-hotstandby.txt
-
-test_timeout.js
-
-tslint_result.txt
 tslint.json
 dist/
+internal_dev/
