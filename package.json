@@ -4,7 +4,8 @@
   "description": "\"A basic Refinitiv Real-Time - Optimized WebSocket consumer NodeJS application written in TypeScript.\"",
   "main": "./dist/market_price_streaming.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "author": "Wasin Waeosri",
   "license": "Apache-2.0",

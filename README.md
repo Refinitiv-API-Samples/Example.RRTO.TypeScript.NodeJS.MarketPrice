@@ -11,7 +11,7 @@
 
 ## <a id="overview"></a>Overview
 
-**Update**: April 2021
+**Update**: June 2021
 
 [Refinitiv Data Platform (RDP)](https://developers.refinitiv.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-platform-apis) gives you seamless and holistic access to all of the Refinitiv content (whether real-time or non-real-time, analytics or alternative datasets), commingled with your content, enriching, integrating, and distributing the data through a single interface, delivered wherever you need it.
 
@@ -57,7 +57,7 @@ Optionally, the application subscribes a delay */EUR=* RIC code from Refinitiv R
     ```
     set https_proxy=http://<proxy.server>:<port>
     ```
-4. Run ```$> npx webpack``` command in the command prompt to build and compile all TypeScript files in *src* folder into JavaScript file in  *./dist/* folder
+4. Run ```$> npm run build``` command in the command prompt to build and compile all TypeScript files in *src* folder into JavaScript file in  *./dist/* folder
 5. In a command prompt, go to *./dist/* folder and run market_price_streaming.js Node.js application with the following command
     ```
     $> node market_price_streaming.js --user <Your Refinitiv Real-Time - Optimized username> --password <Your Refinitiv Real-Time - Optimized password> --clientid <client_id> --ric <Interested RIC code>

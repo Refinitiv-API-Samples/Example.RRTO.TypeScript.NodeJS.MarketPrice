@@ -33,5 +33,5 @@ module.exports = {
         ]
     },
     target: 'async-node',
-    mode: 'development'
+    mode: 'production'
 };
