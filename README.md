@@ -270,9 +270,13 @@ The Docker Desktop/Engine application should be installed and run properly on yo
     ```
 3. Once Docker build success, use the [Docker run](https://docs.docker.com/engine/reference/run/) command to start the Docker container to run application.
     ```
-    $> docker run developers/node_streamingjs --user <Machine-ID> --password <Password> --clientid <App key> --ric <Interested RIC code (optional)>
+    $> docker run --name node_streaming developers/node_streamingjs --user <Machine-ID> --password <Password> --clientid <App key> --ric <Interested RIC code (optional)>
     ```
 4. The result will be the same as the above section.
+5. You can stop the application container via the following command.
+    ```
+    $> docker stop node_streaming
+    ```
 
 ## <a id="references"></a>References
 For further details, please check out the following resources:
