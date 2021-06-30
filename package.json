@@ -27,7 +27,7 @@
     "minimist": "^1.2.3",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "ws": "^7.4.4"
+    "ws": "^7.5.1"
   },
   "resolutions": {
     "minimist": "^1.2.5"
